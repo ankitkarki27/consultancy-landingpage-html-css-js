@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - NextStep Consultancy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Register Container -->
+  <div class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-lg p-8 bg-white shadow-lg rounded-lg">
+      <!-- Logo -->
+      <div class="flex justify-center mb-8">
+        <img src="assets/logo.png" alt="Logo" class="h-16">
+      </div>
+
+      <!-- Register Form -->
+      <form action="#" method="POST">
+        <!-- Row 1: Full Name, Email, Phone --> 
+         <div>
+            <label for="fullname" class="block text-gray-700 text-sm font-semibold">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your full name">
+          </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div>
+            <label for="email" class="block text-gray-700 text-sm font-semibold">Email</label>
+            <input type="email" id="email" name="email" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-gray-700 text-sm font-semibold">Phone</label>
+            <input type="tel" id="phone" name="phone" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your phone number">
+          </div>
+        </div>
+
+        <!-- Row 2: Password, Confirm Password -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <!-- Password -->
+          <div>
+            <label for="password" class="block text-gray-700 text-sm font-semibold">Password</label>
+            <input type="password" id="password" name="password" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your password">
+          </div>
+
+          <!-- Confirm Password -->
+          <div>
+            <label for="confirm_password" class="block text-gray-700 text-sm font-semibold">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Confirm your password">
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition duration-300">Register</button>
+
+        <!-- Login Link -->
+        <div class="text-center mt-4">
+          <p class="text-sm text-gray-600">Already have an account? <a href="login.html" class="text-blue-500 hover:text-blue-700">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

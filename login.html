@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NextStep Consultancy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Login Container -->
+  <div class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-sm p-8 bg-white shadow-lg rounded-lg">
+      <!-- Logo -->
+      <div class="flex justify-center mb-8">
+        <img src="assets/logo.png" alt="Logo" class="h-16">
+      </div>
+      
+      <!-- Login Form -->
+      <form action="#" method="POST">
+        <!-- Email Input -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 text-sm font-semibold">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+        </div>
+
+        <!-- Password Input -->
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 text-sm font-semibold">Password</label>
+          <input type="password" id="password" name="password" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your password">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition duration-300">Login</button>
+
+        <!-- Forgot Password Link -->
+        <div class="text-center mt-4">
+          <a href="#" class="text-sm text-blue-500 hover:text-blue-700">Forgot Password?</a>
+        </div>
+      </form>
+
+      <!-- Register Link -->
+      <div class="text-center mt-6">
+        <p class="text-sm text-gray-600">Don't have an account? <a href="register.html" class="text-blue-500 hover:text-blue-700">Register</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextStep Consultancy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body{
+      font-family: "Lato", serif;
+    } 
+    </style>
+  
+    
+</head>
+<body>
+  <div class="min-h-screen bg-white">
+    <!-- Navigation -->
+<header class="top-0 left-0 w-full bg-white shadow-md z-50">
+  <!-- Desktop and Tablet Header -->
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo for Desktop -->
+    <a href="#" class="flex items-center">
+      <img src="assets/logo.png" alt="NextStep Logo" class="h-14 w-auto hidden md:block"> <!-- Hidden on mobile -->
+    </a>
+
+    <!-- Desktop Links -->
+    <div class="hidden md:flex space-x-8 items-center">
+      <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
+      <a href="#services" class="text-gray-600 hover:text-blue-500">Services</a>
+      <a href="#blogs" class="text-gray-600 hover:text-blue-500">Blogs</a>
+      <a href="#test-prep" class="text-gray-600 hover:text-blue-500">Test Prep</a>
+      <a href="#events" class="text-gray-600 hover:text-blue-500">Events</a>
+      <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
+    </div>
+
+    <!-- Login Button for Desktop -->
+    <a href="login.html" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 hidden md:inline-block">
+      Login
+    </a>
+  </div>
+
+  <!-- Mobile Only -->
+  <div class="md:hidden bg-white p-4">
+    <!-- Logo and Login Button in Header (Only for Mobile) -->
+    <div class="flex justify-between items-center">
+      <!-- Logo for Mobile -->
+      <a href="#hero" class="flex items-center">
+        <img src="assets/logo.png" alt="NextStep Logo" class="h-10 w-auto">
+      </a>
+
+      <!-- Login Button for Mobile -->
+      <a href="login.html"  class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">
+        Login
+      </a>
+    </div>
+
+    <!-- Hamburger Icon and Contact Number Below (Mobile View) -->
+    <div class="mt-4 flex justify-between items-center bg-  -200">
+        <!-- Contact Number -->
+        <div class="text-gray-600">
+          <span class="text-lg"></span> +1 (234) 567-8900</span>
+        </div>
+
+      <button id="mobile-hamburger" class="text-gray-600 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+    
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-white p-4 md:hidden">
+    <a href="#about" class="block text-gray-600 hover:text-blue-500 mb-2">About</a>
+    <a href="#services" class="block text-gray-600 hover:text-blue-500 mb-2">Services</a>
+    <a href="#blogs" class="block text-gray-600 hover:text-blue-500 mb-2">Blogs</a>
+    <a href="#test-prep" class="block text-gray-600 hover:text-blue-500 mb-2">Test Prep</a>
+    <a href="#events" class="block text-gray-600 hover:text-blue-500 mb-2">Events</a>
+    <a href="#contact" class="block text-gray-600 hover:text-blue-500 mb-2">Contact</a>
+  </div>
+</header>
+
+<script>
+  // Toggle Mobile Menu
+  const mobileHamburger = document.getElementById("mobile-hamburger");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileHamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+<!-- Hero Section -->
+<section id="hero" class="bg-white text-gray-600 py-12">
+  <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between">
+    
+    <!-- Text Section -->
+    <div class="w-full md:w-1/2 space-y-6">
+      <h1 class="text-4xl font-bold uppercase text-gray-800">Study Abroad with Confidence</h1>
+      <p class="text-xl text-gray-800">Our educational consultancy provides comprehensive guidance and support to help you achieve your academic goals overseas.</p>
+      <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-blue-500 inline-block">
+        <i class="fas fa-calendar-alt mr-2"></i> Book Your Appointment
+      </a>
+    </div>
+    
+    <!-- Image Section -->
+    <div class="w-full md:w-1/2 mt-6 md:mt-0">
+      <img src="assets/2.png" alt="Study Abroad" class="rounded-lg">
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="bg-whitesmoke py-12 px-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-blue-600 mb-6">Who We Are</h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+          At <strong>NextStep Educational Consultancy</strong>, we are dedicated to empowering students to achieve their academic dreams with expert guidance and unwavering support.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-trophy text-blue-600 text-3xl mr-4"></i>
+              <h3 class="text-xl font-bold text-gray-800">Years of Excellence</h3>
+            </div>
+            <p class="text-gray-600">
+              Over 10 years of experience helping students secure admissions at top universities worldwide.
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-user-graduate text-blue-600 text-3xl mr-4"></i>
+              <h3 class="text-xl font-bold text-gray-800">Personalized Guidance</h3>
+            </div>
+            <p class="text-gray-600">
+              One-on-one counseling to address each student's unique goals, ensuring they receive tailored advice and support.
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-globe-americas text-blue-600 text-3xl mr-4"></i>
+              <h3 class="text-xl font-bold text-gray-800">Global Reach</h3>
+            </div>
+            <p class="text-gray-600">
+              Partnerships with leading institutions in over 30 countries, offering unparalleled opportunities for students.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="mt-8 bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-blue-500 inline-block">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-blue-600 mb-6">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Visa and Applications</h3>
+            <p class="text-gray-600 mb-4">
+              We provide comprehensive support for your university applications, including essay writing, document preparation, and interview preparation.
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-600">Learn More</a>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Test Preparation</h3>
+            <p class="text-gray-600 mb-4">
+              Our team of experts will guide you through the visa application process, ensuring you have the necessary documents and understanding of the requirements.
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-600">Learn More</a>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Documents</h3>
+            <p class="text-gray-600 mb-4">
+              We can help you identify and apply for scholarships to fund your studies, maximizing your chances of securing financial aid.
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-600">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+  <!-- Blogs Section -->
+<section id="blogs" class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-blue-600 mb-6">Latest Blogs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+        <img src="assets/1.png" alt="Blog Image 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">5 Tips for Studying Abroad</h3>
+          <p class="text-gray-600 mb-4">
+            Explore essential tips for a successful study abroad journey, from choosing the right destination to adapting to a new culture.
+          </p>
+          <a href="#" class="text-blue-500 hover:text-blue-600">Read More</a>
+        </div>
+      </div>
+      <!-- Blog Post 2 -->
+      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+        <img src="assets/2.png" alt="Blog Image 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Top Scholarships for International Students</h3>
+          <p class="text-gray-600 mb-4">
+            Discover a curated list of scholarships to help you fund your education and achieve your academic goals.
+          </p>
+          <a href="#" class="text-blue-500 hover:text-blue-600">Read More</a>
+        </div>
+      </div>
+      <!-- Blog Post 3 -->
+      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+        <img src="assets/3.png" alt="Blog Image 1" class="w-full h-48 object-cover"> 
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">How to Ace Your Student Visa Interview</h3>
+          <p class="text-gray-600 mb-4">
+            Learn strategies and tips to confidently navigate your student visa interview process and secure approval.
+          </p>
+          <a href="#" class="text-blue-500 hover:text-blue-600">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Test Preparation Section -->
+    <section id="test-prep" class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-blue-600 mb-6">Test Preparation Classes</h2>
+        <p class="text-gray-600 mb-8">
+          We offer comprehensive test preparation courses to help you achieve your target scores on exams like TOEFL, IELTS, GRE, and more.
+        </p>
+        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-blue-500 inline-block">
+          Enroll Now
+        </a>
+      </div>
+    </section>
+
+      <!-- Events Section -->
+
+  <section id="events" class="bg-white py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Upcoming Events</h2>
+      <div class="grid grid-cols-1 md:grid-cols-1">
+        <!-- Event Card -->
+        <div class="bg-white rounded-lg overflow-hidden flex md:flex-row shadow-lg">
+          <!-- Image Section -->
+          <div class="md:w-1/2 flex items-center justify-center p-4">
+            <img src="assets/2.png" alt="Study Abroad" class="w-auto h-auto object-contain">
+          </div>
+          <!-- Content Section -->
+          <div class="p-6 flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Tips for Choosing the Right University</h3>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-calendar-alt text-gray-500 mr-2"></i>
+              <span class="text-gray-800">Starts on January 15, 2025</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Join us for our annual study abroad fair, where you can meet representatives from universities around the world and learn about your options.
+             
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-600">Join Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-16 mt-16">
+  <div class="container mx-auto px-6 md:px-12 text-center">
+    <!-- Footer Main Text -->
+    <p class="text-sm md:text-base">&copy; 2024 NextStep Consultancy. All rights reserved.</p>
+    
+    <!-- Footer Links -->
+    <div class="mt-6 space-x-6">
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Privacy Policy</a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Terms & Conditions</a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Contact</a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">About Us</a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Services</a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="mt-6 space-x-6">
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">
+        <i class="fab fa-facebook-f text-lg"></i>
+      </a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">
+        <i class="fab fa-twitter text-lg"></i>
+      </a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">
+        <i class="fab fa-linkedin-in text-lg"></i>
+      </a>
+      <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">
+        <i class="fab fa-instagram text-lg"></i>
+      </a>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="mt-6 text-sm text-gray-400">
+      <p>Made with <span class="text-red-500">&hearts;</span> by NextStep Consultancy</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- Mobile Navbar Toggle Script -->
+  <script>
+    const menuButton = document.querySelector('button.md:hidden');
+    const navLinks = document.querySelector('div.hidden.md\\:flex');
+
+    menuButton.addEventListener('click', () => {
+      navLinks.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
