@@ -8,20 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mako&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-    
+      @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mako&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
       body {
-        font-family: "Mako", serif;
+        font-family: "Merriweather Sans", serif;
+        font-optical-sizing: auto;  
+        font-style: normal;
          } 
     </style>
-      
-        <!-- .jost-<uniquifier> {
-          font-family: "Jost", serif;
-          font-optical-sizing: auto;
-          font-weight: <weight>;
-          font-style: normal;
-        } -->
 </head>
 <body>
   <div class="min-h-screen bg-white">
@@ -35,8 +28,8 @@
     </a>
 
     <!-- Desktop Links -->
-    <div class="hidden md:flex space-x-8 items-center">
-      <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
+    <div class="hidden md:flex space-x-6 items-center">
+      <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
       <a href="#services" class="text-gray-600 hover:text-blue-500">Services</a>
     
       <a href="#test-prep" class="text-gray-600 hover:text-blue-500">Test Prep</a>
@@ -111,7 +104,11 @@
     
     <!-- Text Section -->
     <div class="w-full md:w-1/2 space-y-6">
-      <h1 class="text-4xl font-bold uppercase text-gray-800">Study Abroad with Confidence</h1>
+      <h1 class="text-4xl md:text-6xl font-bold capitalize text-gray-800 leading-tight">
+        Study Abroad With <span class="text-blue-600">Confidence</span>
+      </h1>
+      
+      
       <p class="text-xl text-gray-800">Our educational consultancy provides comprehensive guidance and support to help you achieve your academic goals overseas.</p>
       <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 inline-block">
         <i class="fas fa-calendar-alt mr-2"></i> Book Your Appointment
@@ -214,9 +211,12 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">IELTS Test Preparation</h3>
           <p class="text-gray-500 mb-4">6 Weeks</p>
-          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-            View Details →
-          </a>
+        
+            <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+              <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all  duration-300 ease-out"></span>
+              <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
+            </a>
+          
         </div>
       </div>
 
@@ -226,8 +226,9 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">TOEFL Test Preparation</h3>
           <p class="text-gray-500 mb-4">8 Weeks</p>
-          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-            View Details →
+          <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+            <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all  duration-300 ease-out"></span>
+            <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
           </a>
         </div>
       </div>
@@ -238,9 +239,16 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-800 mb-2">PTE Test Preparation</h3>
           <p class="text-gray-500 mb-4">4 Weeks</p>
-          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-            View Details →
+          <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+            <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all duration-300 ease-out"></span>
+            <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
+            <style>
+              .group:hover {
+                border-color: #2d3748; /* Tailwind's gray-800 */
+              }
+            </style>
           </a>
+          
         </div>
       </div>
     </div>
@@ -249,7 +257,7 @@
     <div class="mt-8 text-center">
       <div class="p-6">
         <!-- <p class="text-lg text-gray-600 mb-4">Explore all our test preparation classes for your academic success.</p> -->
-        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
           View All Test Preparations
         </a>
       </div>
@@ -272,13 +280,14 @@
         <!-- <img src="/media/events/event.jpg" alt="Event image" class="w-full h-60 md:h-48 object-cover"> -->
         <img src="assets/2.png" alt="IELTS" class="w-full h-60 md:h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Tips for Choosing the Right University</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Tips for Choosing the Right University</h3>
           <div class="flex items-center text-sm text-gray-800 mb-4">
             <i class="fas fa-calendar-alt mr-2"></i>
             <span>Starts on January 15, 2025</span>
           </div>
-          <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-            View Details →
+          <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+            <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all  duration-300 ease-out"></span>
+            <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
           </a>
         </div>
       </div>
@@ -288,7 +297,7 @@
     <div class="mt-8 text-center">
       <div class="p-6">
         <!-- <p class="text-lg text-gray-600 mb-4">Explore all our test preparation classes for your academic success.</p> -->
-        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
           View All Test Preparations
         </a>
       </div>
@@ -316,8 +325,9 @@
           <p class="text-gray-600 mb-4">
             Explore essential tips for a successful study abroad journey, from choosing the right destination to adapting to a new culture.
            </p>
-          <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-            View Details →
+           <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+            <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all  duration-300 ease-out"></span>
+            <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
           </a>
         </div>
       </div>
@@ -331,8 +341,9 @@
           <p class="text-gray-600 mb-4">
             Discover a curated list of scholarships to help you fund your education and achieve your academic goals.
           </p>
-           <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-            View Details →
+          <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+            <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all  duration-300 ease-out"></span>
+            <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
           </a>
         </div>
       </div>
@@ -346,9 +357,10 @@
             <p class="text-gray-600 mb-4">
               Learn effective strategies for managing your finances while studying abroad and ensuring a stress-free experience.
               </p>
-             <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-              View Details →
-            </a>
+              <a href="#" class="relative px-6 py-3 text-white bg-transparent rounded-lg border-2 border-blue-500 flex items-center justify-center overflow-hidden group">
+                <span class="absolute inset-0 w-0 h-full bg-blue-500 group-hover:w-full transition-all  duration-300 ease-out"></span>
+                <span class="relative z-10 group-hover:text-black text-blue-500 transition">View Details →</span>
+              </a>
           </div>
         </div>
     </div>
@@ -357,7 +369,7 @@
     <div class="mt-8 text-center">
       <div class="p-6">
         <!-- <p class="text-lg text-gray-600 mb-4">Explore all our test preparation classes for your academic success.</p> -->
-        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+        <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
           View All Test Preparations
         </a>
       </div>
@@ -426,7 +438,7 @@
       <p class="text-gray-600 mb-6">
         Join thousands of students who have successfully secured their admission to their dream universities with the help of Nextstep.
       </p>
-      <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+      <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
         Get Started
       </a>
     </div>
