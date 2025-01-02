@@ -6,15 +6,22 @@
   <title>NextStep Consultancy</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    body{
-      font-family: "Lato", serif;
-    } 
-    </style>
   
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mako&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     
+    
+      body {
+        font-family: "Mako", serif;
+         } 
+    </style>
+      
+        <!-- .jost-<uniquifier> {
+          font-family: "Jost", serif;
+          font-optical-sizing: auto;
+          font-weight: <weight>;
+          font-style: normal;
+        } -->
 </head>
 <body>
   <div class="min-h-screen bg-white">
@@ -31,9 +38,10 @@
     <div class="hidden md:flex space-x-8 items-center">
       <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
       <a href="#services" class="text-gray-600 hover:text-blue-500">Services</a>
-      <a href="#blogs" class="text-gray-600 hover:text-blue-500">Blogs</a>
+    
       <a href="#test-prep" class="text-gray-600 hover:text-blue-500">Test Prep</a>
       <a href="#events" class="text-gray-600 hover:text-blue-500">Events</a>
+      <a href="#blogs" class="text-gray-600 hover:text-blue-500">Blogs</a>
       <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
     </div>
 
@@ -79,9 +87,10 @@
   <div id="mobile-menu" class="hidden bg-white p-4 md:hidden">
     <a href="#about" class="block text-gray-600 hover:text-blue-500 mb-2">About</a>
     <a href="#services" class="block text-gray-600 hover:text-blue-500 mb-2">Services</a>
-    <a href="#blogs" class="block text-gray-600 hover:text-blue-500 mb-2">Blogs</a>
+   
     <a href="#test-prep" class="block text-gray-600 hover:text-blue-500 mb-2">Test Prep</a>
     <a href="#events" class="block text-gray-600 hover:text-blue-500 mb-2">Events</a>
+    <a href="#blogs" class="block text-gray-600 hover:text-blue-500 mb-2">Blogs</a>  
     <a href="#contact" class="block text-gray-600 hover:text-blue-500 mb-2">Contact</a>
   </div>
 </header>
@@ -169,122 +178,272 @@
             <p class="text-gray-600 mb-4">
               We provide comprehensive support for your university applications, including essay writing, document preparation, and interview preparation.
             </p>
-            <a href="#" class="text-blue-500 hover:text-blue-600">Learn More</a>
+            <a href="#" class="text-blue-500 hover:text-gray-900">Learn More</a>
           </div>
           <div class="bg-gray-100 rounded-lg p-6">
             <h3 class="text-xl font-bold text-gray-800 mb-2">Test Preparation</h3>
             <p class="text-gray-600 mb-4">
               Our team of experts will guide you through the visa application process, ensuring you have the necessary documents and understanding of the requirements.
             </p>
-            <a href="#" class="text-blue-500 hover:text-blue-600">Learn More</a>
+            <a href="#" class="text-blue-500 hover:text-gray-900">Learn More</a>
           </div>
           <div class="bg-gray-100 rounded-lg p-6">
             <h3 class="text-xl font-bold text-gray-800 mb-2">Documents</h3>
             <p class="text-gray-600 mb-4">
               We can help you identify and apply for scholarships to fund your studies, maximizing your chances of securing financial aid.
             </p>
-            <a href="#" class="text-blue-500 hover:text-blue-600">Learn More</a>
+            <a href="#" class="text-blue-500 hover:text-gray-900">Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Blogs Section -->
-  <!-- Blogs Section -->
-<section id="blogs" class="bg-white py-12">
+<!-- Test Preparation Section -->
+<section id="test-prep" class="bg-white py-12">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-blue-600 mb-6">Latest Blogs</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Blog Post 1 -->
-      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
-        <img src="assets/1.png" alt="Blog Image 1" class="w-full h-48 object-cover">
+    <h2 class="text-3xl font-bold text-blue-600 mb-6">Test Preparation Classes</h2>
+    <p class="text-gray-600 mb-8">
+      We offer comprehensive test preparation courses to help you achieve your target scores on exams like TOEFL, IELTS, GRE, and more.
+    </p>
+
+    <!-- Cards Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- IELTS Card -->
+      <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+        <img src="assets/2.png" alt="IELTS" class="w-full h-40 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">5 Tips for Studying Abroad</h3>
-          <p class="text-gray-600 mb-4">
-            Explore essential tips for a successful study abroad journey, from choosing the right destination to adapting to a new culture.
-          </p>
-          <a href="#" class="text-blue-500 hover:text-blue-600">Read More</a>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">IELTS Test Preparation</h3>
+          <p class="text-gray-500 mb-4">6 Weeks</p>
+          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+            View Details →
+          </a>
         </div>
       </div>
-      <!-- Blog Post 2 -->
-      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
-        <img src="assets/2.png" alt="Blog Image 1" class="w-full h-48 object-cover">
+
+      <!-- TOEFL Card -->
+      <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+        <img src="assets/2.png" alt="TOEFL" class="w-full h-40 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">Top Scholarships for International Students</h3>
-          <p class="text-gray-600 mb-4">
-            Discover a curated list of scholarships to help you fund your education and achieve your academic goals.
-          </p>
-          <a href="#" class="text-blue-500 hover:text-blue-600">Read More</a>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">TOEFL Test Preparation</h3>
+          <p class="text-gray-500 mb-4">8 Weeks</p>
+          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+            View Details →
+          </a>
         </div>
       </div>
-      <!-- Blog Post 3 -->
-      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
-        <img src="assets/3.png" alt="Blog Image 1" class="w-full h-48 object-cover"> 
+
+      <!-- PTE Card -->
+      <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+        <img src="assets/2.png" alt="PTE" class="w-full h-40 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">How to Ace Your Student Visa Interview</h3>
-          <p class="text-gray-600 mb-4">
-            Learn strategies and tips to confidently navigate your student visa interview process and secure approval.
-          </p>
-          <a href="#" class="text-blue-500 hover:text-blue-600">Read More</a>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">PTE Test Preparation</h3>
+          <p class="text-gray-500 mb-4">4 Weeks</p>
+          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+            View Details →
+          </a>
         </div>
+      </div>
+    </div>
+
+    <!-- View All Test Preparations Card -->
+    <div class="mt-8 text-center">
+      <div class="p-6">
+        <!-- <p class="text-lg text-gray-600 mb-4">Explore all our test preparation classes for your academic success.</p> -->
+        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+          View All Test Preparations
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Events</h2>
+    <p class="text-gray-600 mb-8">
+      Stay updated with our upcoming events and webinars. Join us to explore more.
+       </p>
+
+    <!-- Cards Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Events Card -->
+      <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+        <!-- <img src="/media/events/event.jpg" alt="Event image" class="w-full h-60 md:h-48 object-cover"> -->
+        <img src="assets/2.png" alt="IELTS" class="w-full h-60 md:h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Tips for Choosing the Right University</h3>
+          <div class="flex items-center text-sm text-gray-800 mb-4">
+            <i class="fas fa-calendar-alt mr-2"></i>
+            <span>Starts on January 15, 2025</span>
+          </div>
+          <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+            View Details →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- View All Test Preparations Card -->
+    <div class="mt-8 text-center">
+      <div class="p-6">
+        <!-- <p class="text-lg text-gray-600 mb-4">Explore all our test preparation classes for your academic success.</p> -->
+        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+          View All Test Preparations
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 
-    <!-- Test Preparation Section -->
-    <section id="test-prep" class="bg-white py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-blue-600 mb-6">Test Preparation Classes</h2>
-        <p class="text-gray-600 mb-8">
-          We offer comprehensive test preparation courses to help you achieve your target scores on exams like TOEFL, IELTS, GRE, and more.
-        </p>
-        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-blue-500 inline-block">
-          Enroll Now
+<!-- blogs Section -->
+<section id="blogs" class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Blogs</h2>
+    <p class="text-gray-600 mb-6">
+      Stay updated with our Latest blogs and posts. Join us to explore more.
+       </p>
+
+    <!-- Cards Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Events Card -->
+      <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+        <!-- <img src="/media/events/event.jpg" alt="Event image" class="w-full h-60 md:h-48 object-cover"> -->
+        <img src="assets/2.png" alt="IELTS" class="w-full h-60 md:h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">5 Tips for Studying Abroad</h3>
+          <p class="text-gray-600 mb-4">
+            Explore essential tips for a successful study abroad journey, from choosing the right destination to adapting to a new culture.
+           </p>
+          <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+            View Details →
+          </a>
+        </div>
+      </div>
+
+       <!-- Events Card 2 -->
+       <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+        <!-- <img src="/media/events/event.jpg" alt="Event image" class="w-full h-60 md:h-48 object-cover"> -->
+        <img src="assets/2.png" alt="IELTS" class="w-full h-60 md:h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Top Scholarships for International Students</h3>
+          <p class="text-gray-600 mb-4">
+            Discover a curated list of scholarships to help you fund your education and achieve your academic goals.
+          </p>
+           <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+            View Details →
+          </a>
+        </div>
+      </div>
+
+        <!-- Events Card 3 -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+          <!-- <img src="/media/events/event.jpg" alt="Event image" class="w-full h-60 md:h-48 object-cover"> -->
+          <img src="assets/2.png" alt="IELTS" class="w-full h-60 md:h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Guide to Financial Planning</h3>
+            <p class="text-gray-600 mb-4">
+              Learn effective strategies for managing your finances while studying abroad and ensuring a stress-free experience.
+              </p>
+             <a href="#" class="bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
+              View Details →
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <!-- View All Test Preparations Card -->
+    <div class="mt-8 text-center">
+      <div class="p-6">
+        <!-- <p class="text-lg text-gray-600 mb-4">Explore all our test preparation classes for your academic success.</p> -->
+        <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+          View All Test Preparations
         </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-      <!-- Events Section -->
+<!-- Reviews Section -->
+<section id="reviews" class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">What Our Students Say</h2>
+    <p class="text-gray-600 mb-8">See how Nextstep has helped students achieve their academic goals.</p>
 
-  <section id="events" class="bg-white py-12">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-blue-600 mb-6">Upcoming Events</h2>
-      <div class="grid grid-cols-1 md:grid-cols-1">
-        <!-- Event Card -->
-        <div class="bg-white rounded-lg overflow-hidden flex md:flex-row shadow-lg">
-          <!-- Image Section -->
-          <div class="md:w-1/2 flex items-center justify-center p-4">
-            <img src="assets/2.png" alt="Study Abroad" class="w-auto h-auto object-contain">
+    <!-- Reviews Row -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Review Card 1 -->
+      <div class="bg-white border rounded-lg shadow-md p-6">
+        <p class="text-gray-600 mb-4">
+          "Nextstep made the entire university application process so smooth. I wouldn’t have made it to my dream university without their support!"
+        </p>
+        <div class="flex items-center">
+          <img src="assets/3.png" alt="Student 1" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">John Doe</h4>
+            <span class="text-sm text-gray-500">Admitted to Harvard University</span>
           </div>
-          <!-- Content Section -->
-          <div class="p-6 flex flex-col justify-between">
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Tips for Choosing the Right University</h3>
-            <div class="flex items-center mb-4">
-              <i class="fas fa-calendar-alt text-gray-500 mr-2"></i>
-              <span class="text-gray-800">Starts on January 15, 2025</span>
-            </div>
-            <p class="text-gray-600 mb-4">
-              Join us for our annual study abroad fair, where you can meet representatives from universities around the world and learn about your options.
-             
-            </p>
-            <a href="#" class="text-blue-500 hover:text-blue-600">Join Here</a>
+        </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="bg-white border rounded-lg shadow-md p-6">
+        <p class="text-gray-600 mb-4">
+          "I’m so thankful for the guidance I received from Nextstep. Their test prep courses were amazing, and their support was unmatched."
+        </p>
+        <div class="flex items-center">
+          <img src="assets/2.png" alt="Student 2" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">Jane Smith</h4>
+            <span class="text-sm text-gray-500">Admitted to Stanford University</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="bg-white border rounded-lg shadow-md p-6">
+        <p class="text-gray-600 mb-4">
+          "Nextstep not only helped me with admissions but also gave me the confidence to succeed in my interviews. Highly recommended!"
+        </p>
+        <div class="flex items-center">
+          <img src="assets/1.png" alt="Student 3" class="w-12 h-12 rounded-full object-cover mr-4">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">Michael Lee</h4>
+            <span class="text-sm text-gray-500">Admitted to MIT</span>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>  
+
+<!-- Start Your Journey With Us Section -->
+<section id="journey" class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Start Your Journey With Us</h2>
+      <p class="text-gray-600 mb-6">
+        Join thousands of students who have successfully secured their admission to their dream universities with the help of Nextstep.
+      </p>
+      <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</section>
 
 
 <!-- Footer Section -->
-<footer class="bg-gray-900 text-white py-16 mt-16">
+<footer class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center">
   <div class="container mx-auto px-6 md:px-12 text-center">
     <!-- Footer Main Text -->
-    <p class="text-sm md:text-base">&copy; 2024 NextStep Consultancy. All rights reserved.</p>
+    <p class="text-lg md:text-xl mb-8 px-4">
+      NextStep Consultancy is committed to providing expert guidance and personalized support to help you achieve your academic goals abroad. We simplify the process of securing admission to your dream university, ensuring a smooth journey to a brighter future.
+    </p>
     
     <!-- Footer Links -->
-    <div class="mt-6 space-x-6">
+    <div class="space-x-6 mb-8">
       <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Privacy Policy</a>
       <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Terms & Conditions</a>
       <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">Contact</a>
@@ -293,7 +452,7 @@
     </div>
 
     <!-- Social Media Icons -->
-    <div class="mt-6 space-x-6">
+    <div class="space-x-6 mb-8">
       <a href="#" class="text-white hover:text-blue-500 transition duration-300 ease-in-out">
         <i class="fab fa-facebook-f text-lg"></i>
       </a>
@@ -309,8 +468,8 @@
     </div>
 
     <!-- Footer Note -->
-    <div class="mt-6 text-sm text-gray-400">
-      <p>Made with <span class="text-red-500">&hearts;</span> by NextStep Consultancy</p>
+    <div class="text-sm text-gray-400">
+      <p class="text-white font-medium md:text-l mb-4">&copy; 2024 NextStep Consultancy. All rights reserved.</p>
     </div>
   </div>
 </footer>
